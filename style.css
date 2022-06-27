@@ -1,0 +1,694 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f7fa;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px #f1eff1 solid;
+}
+
+.search-image {
+    height: 1.8rem;
+}
+
+.in-logo {
+    border-right: 1px #f1eff1 solid;
+    height: 4rem;
+    padding: 1rem 0 2rem 13rem;
+    padding-right: 1rem;
+}
+
+.search img {
+    height: 18px;
+    opacity: 0.8;
+    margin-left: 1.5rem;
+}
+
+.search input {
+    border: none;
+    width: 5rem;
+    outline: none;
+    margin-left: 10px;
+}
+
+.search {
+    border: 1px #e2e0e2 solid;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: .9rem 0rem;
+    height: 1rem;
+    width: 9rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.home-premium {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    border-right: 1px #f1eff1 solid;
+    border-left: 1px #f1eff1 solid;
+    height: 4rem;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+
+.try-premium {
+    color: red;
+}
+
+.notifications {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-right: 1px #f1eff1 solid;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.notification {
+    height: 20px;
+}
+
+.active-notification {
+    height: 30px;
+}
+
+.avatar {
+    height: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.posts-following {
+    background-color: white;
+    padding: 0.5rem 24rem 0rem 14rem;
+    font-weight: 300; 
+    font-size: 14px;
+    justify-content: space-between;
+    /* width: 26rem; */
+}
+
+.posts {
+    display: flex;
+    width: 26rem;
+    justify-content: space-between;
+} 
+
+.posts span {
+    border-bottom: 5px white solid;
+    padding-bottom: 5px;
+}
+
+.posts span:hover {
+    border-bottom: 2px #82bcec solid;
+    cursor: pointer;
+}
+
+.active-posts {
+    width: 4rem;
+    border-bottom: 2px #82bcec solid;
+    padding-left: 1.1rem;
+}
+
+.pages {
+    margin: 1rem 11rem 1rem 10rem;
+    display: flex;
+}
+.right-page {
+    background-color: white;
+    width: 13rem;
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px lightblue;
+    border-top: lightblue 1px solid;
+    border-left: lightblue 0.1px solid;
+    height: 32rem;
+}
+
+.bill-gates-avatar {
+    border-radius: 50%;
+    height: 6.5rem;
+    margin-bottom: 1rem;
+}
+
+.right-page h5 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.right-page p {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+.right-page .follow {
+    background-color: #56ade3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 9.8rem;
+    height: 2.1rem;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+}
+
+.right-page .follow:hover {
+    background-color: #4f9be4;
+    cursor: pointer;
+}
+
+.connect {
+    display: flex;
+    color: #56ade3;
+    border: #4f9be4 1px solid;
+    margin-top: 0.7rem;
+    width: 9.8rem;
+    height: 2.1rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect img {
+filter: opacity(0.7) drop-shadow(0 0 0 #4f9be4);
+}
+
+.connect:hover {
+    background-color: #eef5fe;
+    cursor: pointer;
+}
+
+.connecting-followers {
+    display: flex;
+    justify-content: center;
+    border-top: 1px hsl(0deg 0% 95%) solid;
+    border-bottom: 1px hsl(0deg 0% 95%) solid;
+    margin-top: 1rem;
+    width: 13rem;
+    margin-bottom: 1rem;
+}
+
+.connecting-followers span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+.link-logo {
+    height: 7px;
+    opacity: 0.2;
+    /* width: 13px; */
+}
+
+.web-logo {
+    height: 23px;
+    opacity: 0.6;
+}
+
+.link-billgates {
+    border-bottom: 1px hsl(0deg 0% 95%) solid;   
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    width: 13rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.link-billgates span {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    background-color: grey;
+    height: 10px;
+    width: 10px;
+    clip-path: polygon(50% 0%, 77% 25%, 100% 46%, 78% 46%, 79% 91%, 52% 91%, 21% 91%, 21% 46%, 0 46%, 25% 23%);
+    margin-bottom: 1px;
+}
+
+.line {
+    background-color: grey;
+    width: 12px;
+    height: 1px;
+}
+
+.arrow-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.export-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+}
+
+.link-billgates p:hover {
+    border-bottom: 1px grey solid;
+    cursor: pointer;
+}
+
+.middle-page {
+    display: flex;
+    margin-left: 1.5rem;
+    flex-direction: column;
+}
+
+.middle-top {
+    background-color: white;
+    width: 36rem;
+    height: 21rem;
+}
+
+.posts-greater {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px hsl(0deg 0% 95%) solid;
+}
+
+.greater-than {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+}
+
+.greater-than:hover {
+    background-color: #f6f4f6;
+    cursor: pointer;
+}
+
+.greater-left {
+    margin-right: 0.5rem;
+}
+
+.the-three-articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.the-three-articles img {
+    height: 11rem;
+    object-fit: cover;
+    width: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-date {
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+
+.article-description {
+    font-size: 14px;
+}
+.three-middle-articles {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+
+.the-three-articles:hover .article-description {
+    border-bottom: 1px gray solid;
+    width: 5.7rem;
+}
+
+.the-three-articles:hover .active-article-description {
+    border-bottom: 1px gray solid;
+    width: 9.34rem;
+}
+
+.whole-background {
+    margin-top: 1rem;
+    background-color: white;
+    width: 36rem;
+    height: 63rem;
+    margin-bottom: 1rem;
+}
+
+.whole-background h4 {
+    padding: 1rem;
+    border-bottom: 1px hsl(0deg 0% 95%) solid;
+}
+.summary, .experience {
+    padding: 1.2rem 1rem;
+}
+
+.summary img, .experience img {
+    height: 1.3rem;
+    margin-right: 0.5rem;
+}
+
+.summary span, .experience span {
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.lorem-1 {
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 1.7rem;
+    padding-top: 1rem;
+}
+
+.experience .circle {
+    height: 10px;
+    width: 10px;
+    border: 1px hsl(0deg 0% 87%) solid;
+    border-radius: 50%;
+}
+
+.experience .side-line{
+    background-color: hsl(0deg 0% 87%);
+    height: 5rem;
+    margin-left: 4px;
+    width: 1px;
+}
+
+.circle-line-chairman {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.experience-chairman {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.7rem;
+    margin-top: -0.35rem;
+}
+
+.experience-bottom-spacing {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.experience-bottom-spacing .date-present {
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.microsoft-co-founder span {
+    font-size: 16px;
+}
+
+.experience-bottom-spacing .blue-microsoft {
+    color: hsl(208deg 82% 68%);
+    font-size: 17px;
+    margin-top: 1rem;
+}
+
+.active-date-present {
+    margin-top: -0.1rem;
+}
+
+.microsoft-co-founder img {
+    margin-left: 16.7rem;
+}
+
+.microsoft-co-founder .microsoft {
+    height: 2.5rem;
+    margin-left: 13.5rem;
+    margin-top: -1rem;
+}
+
+.microsoft-co-founder {
+    display: flex;
+}
+
+.active-date-present img {
+    height: 1.5rem;
+}
+
+.whole-background .education, .whole-background .skills {
+    margin-top: -2.5rem;
+}
+
+.social-marketing {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.social-marketing .seventy-four {
+    font-size: 16px;
+    border: 1px black solid;
+    border-radius: 50%;
+    height: 42px;
+    width: 40px;
+    padding-top: 13px;
+    padding-left: 10px;
+}
+
+.social-marketing .media-marketing {
+    font-size: 16px;
+    margin-left: 1.5rem;
+    flex-grow: 1;
+}
+
+.avatars-images {
+    display: flex;
+    align-items: center;
+}
+.avatars-images img{
+    border-radius: 50%;
+    height: 2.5rem;
+}
+
+.avatars-images .seventy-one-plus {
+    height: 2.5rem;
+    background-color: hsl(0deg 0% 95%);
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 500;
+    width: 2.5rem;
+    padding-top: 14px;
+    padding-left: 10px;
+}
+
+.wireless-technology {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.wireless-technology .wireless {
+    background-color: hsl(0deg 0% 95%);
+    padding: 0.3rem;
+    font-size: 15px;
+    margin-left: 0.2rem;
+}
+
+.experience-a .blue-microsoft:hover {
+    cursor: pointer;
+    border-bottom: 1px hsl(208deg 80% 68%) solid;
+}
+
+.lorems {
+    display: flex;
+    font-weight: 300;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.lorem-a {
+    border: 1px hsl(0deg 0% 95%) solid;
+    padding: 1rem 0.8rem 1.3rem;
+    background-color: white;
+}
+
+.avatar-medias {
+    display: flex;
+    justify-content: space-around;
+}
+
+.avatar-name-medias {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 0.8rem 1.3rem;
+}
+
+.avatar-name-medias img {
+    height: 2.5rem;
+    border-radius: 50%;
+    /* margin-left: .5rem; */
+}
+
+.avatar-name-medias .company {
+    opacity: o.5;
+    color: hsl(23deg 5% 69%);
+    font-size: 14px;
+}
+
+.steve-apple {
+    margin-left: 10px;
+}
+
+.Mark-zuckerberg {
+    margin-left: 2.5rem;
+}
+
+.middle-page .third-middle {
+    height: 24rem;
+    margin-bottom: 1.3rem;
+}
+
+.microsoft-amazon {
+    display: flex;
+    justify-content: space-around;
+    height: 4.2rem;
+    align-content: center;   
+    margin-top: 1rem;
+}
+
+.microsoft-amazon img {
+    border: 1px hsl(0deg 0% 95%) solid;
+    padding: 1rem;
+}
+
+.microsoft-follow {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.micro-follow {
+    margin-right: 3rem;
+}
+
+.micro-follow span {
+    font-weight: 300;
+}
+
+.micro-follow .plus-follow {
+    color: hsl(211deg 80% 68%);
+    margin-top: 5px;
+    
+}
+
+.plus-follow .plus {
+    border: 1px hsl(211deg 80% 68%) solid;
+    border-radius: 50%;
+    padding: 0.05rem 0.3rem;
+}
+
+.plus-follow .follow:hover {
+    cursor: pointer;
+    border-bottom: 1px hsl(211deg 80% 68%) solid;
+}
+
+.last-middle .see-all {
+    color: hsl(211deg 80% 68%);
+    margin-top: 2rem;
+    border: 1px #b7d5f6 solid;
+    width: 9rem;
+    height: 2.3rem;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 1rem;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-left: 2rem;
+}
+
+.last-middle .see-all:hover {
+    background-color: #ebf1f5;
+    cursor: pointer;
+}
+
+.last-middle {
+    height: 19rem;
+}
+
+.border-below {
+    margin-top: 2.3rem;
+    height: 1px;
+    width: 84.45rem;
+    background-color: hsl(0deg 0% 87%);
+    margin-left: -24.5rem;
+}
+
+.last-middle .corporation {
+    font-weight: 300;
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+
+.people-also-viewed {
+    flex-direction: column;
+}
+
+.left-page{
+    margin-left: 1rem;
+}
+.left-page .people-viewed {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.viewed-avatars {
+    margin-top: -1rem;
+}
+
+.Sergey-Brin {
+    margin-top: 1rem;
+}
+
+.the-influencer img {
+    border-radius: 50%;
+    height: 7rem;
+    margin-top: 1rem;
+}
+
+.influncer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+.influncer-title .company {
+    opacity: 0.5;
+    font-size: 13px;
+    margin-top: 8px;
+}
